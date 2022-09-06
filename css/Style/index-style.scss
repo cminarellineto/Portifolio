@@ -1,0 +1,95 @@
+@import "../components.scss";
+@import "../variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  padding: 0 $xl;
+  background: $color;
+  ul {
+    display: flex;
+    list-style-type: none;
+    li {
+      padding: $xl $md;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      font-weight: $semi;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  .logo {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    img {
+      transform: scale(200%);
+    }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-flow: row-reverse;
+  align-items: center;
+  padding: 0;
+  box-shadow: inset $r-bsxs;
+  height: 60vh;
+  img {
+    transform: scale(80%);
+    margin: 0;
+  }
+  .text {
+    width: 32%;
+    h1 {
+      margin-bottom: $md;
+      color: $color;
+    }
+    p {
+      color: $grayscale-dark;
+      font-weight: $medium;
+      span {
+        color: $fth-color;
+        line-height: 3rem;
+        font-weight: $semi;
+      }
+    }
+  }
+}
+
+.services {
+  display: flex;
+  padding: $xl;
+  flex-flow: column;
+  background: $grayscale-light;
+  .flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    .card {
+      @include card;
+    }
+  }
+  h2 {
+    color: $color;
+    font-weight: $bold;
+    text-align: center;
+    padding: 0 0 $xl 0;
+  }
+}

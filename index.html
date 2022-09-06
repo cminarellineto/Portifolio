@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="css/Style/index-style.css" />
     <link rel="shortcut icon" href="" type="image/x-icon" />
     <script
       src="https://kit.fontawesome.com/2b1c45aad2.js"
       crossorigin="anonymous"
     ></script>
-    <script src=""></script>
+    <script src="script/script.js"></script>
 
     <title>Carlos Minarelli Portifolio</title>
   </head>
   <body>
     <nav>
-      <section class="logo">
-        <img
-          src="assets/Carlos Minarelli-logos/Carlos Minarelli-logos_transparent.png"
-          alt="logo"
-        />
-      </section>
+        <section class="logo">
+          <img
+            src="assets/Carlos Minarelli-logos/Carlos Minarelli-logos_white.png"
+            alt="logo"
+          />
+        </section>
       <section class="navigation">
         <ul>
           <li>
@@ -51,14 +51,14 @@
       </section>
     </header>
     <main>
-      <section class="intro">
-        <h2>Developing apps with passion since yesterday</h2>
-        <p></p>
       </section>
       <section class="services">
+        <h2>Developing apps with passion (since yesterday)</h2>
         <section class="flex-container">
           <div class="card">
-            <div class="icon"></div>
+            <div class="icon">
+              <i class="fa-solid fa-pen-fancy"></i>
+            </div>
             <div class="content">
               <h3>UX/UI Designer</h3>
               <p>
@@ -74,7 +74,9 @@
             </div>
           </div>
           <div class="card">
-            <div class="icon"></div>
+            <div class="icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
             <div class="content">
               <h3>Web Developer</h3>
               <p>
@@ -87,7 +89,9 @@
             </div>
           </div>
           <div class="card">
-            <div class="icon"></div>
+            <div class="icon">
+              <i class="fa-solid fa-print"></i>
+            </div>
             <div class="content">
               <h3>Graphic Designer</h3>
               <p>
@@ -105,19 +109,28 @@
       </section>
       <section class="call-to-action">
         <div class="content">
-          <div class="image"></div>
-          <div class="text"></div>
+          <div class="image">
+            <img src="" alt="">
+          </div>
+          <div class="text">
+            <h3>Even after all of this self roasting, you are still interested in my services?</h3>
+            <p>Alright, then.</p>
+            <input type="button" value="Give me a call! :)">
+          </div>
         </div>
       </section>
       <section class="projects">
         <div class="grid-container">
           <div class="item">
+            <label for="img"></label>
             <img src="" alt="" />
           </div>
           <div class="item">
+            <label for="img"></label>
             <img src="" alt="" />
           </div>
           <div class="item">
+            <label for="img"></label>
             <img src="" alt="" />
           </div>
         </div>
@@ -125,8 +138,22 @@
       <section class="mail-contact">
         <div class="text"></div>
         <form action="" class="mail">
-          <section class="text-input"></section>
-          <section class="button"></section>
+          <section class="text-input">
+            <div class="input">
+              <label for="name"></label>
+              <input type="text" name="name" id="" placeholder="How are you called, mate?">
+            </div>
+            <div class="input">
+              <input type="email" name="email" id="" placeholder="Are you really letting me in this way?">
+            </div>
+            <div class="input">
+              <input type="tel" name="phone" id="" pattern="{0,9} [2], {0,9} [2], {0,9} [9]" placeholder="I'll be watching you.">
+            </div>
+          </section>
+          <section class="button">
+            <input type="button" value="Got nothing better for today, eh?">
+            <input type="reset" value="Clear form? Well... this should be better">
+          </section>
         </form>
       </section>
     </main>
