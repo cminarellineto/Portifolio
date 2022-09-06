@@ -12,6 +12,7 @@ nav {
   display: inline-flex;
   position: fixed;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 10vh;
   padding: 0 $xl;
@@ -21,7 +22,7 @@ nav {
     display: flex;
     list-style-type: none;
     li {
-      padding: $xl $md;
+      padding: $md;
       color: #fff;
       cursor: pointer;
       transition: 0.2s ease-in-out;

@@ -24,8 +24,7 @@
 @mixin card {
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  align-items: space-between;
+  justify-content: space-evenly;
   user-select: none;
   padding: $xl $md;
   margin: 0 $sm;
@@ -61,7 +60,7 @@
   }
   input {
     @include button;
-    margin: $lg auto;
+    margin: auto;
   }
   a {
     @include button;
