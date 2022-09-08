@@ -17,6 +17,7 @@ nav {
   height: 10vh;
   padding: 0 $xl;
   background: $color;
+  box-shadow: $bssm;
   z-index: 1;
   ul {
     display: flex;
@@ -95,5 +96,55 @@ header {
     font-weight: $bold;
     text-align: center;
     padding: 0 0 $xl 0;
+  }
+}
+
+.call-to-action {
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: $xl;
+    .image {
+      display: flex;
+      width: 30%;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      padding: 3rem 0;
+      color: $color;
+      p {
+       color: $grayscale-dark;
+       line-height: 3rem;
+      }
+      a {
+        &::before {
+          content: "Click here";
+        }
+        @include button;
+        flex-flow: column;
+        align-items: center;
+        margin: 0;
+        padding: $md $xl;
+        transition: .3s ease-in-out;
+        &:hover {
+          border-radius: 10rem;
+          padding: 3.5rem;
+          width: 55%;
+          &::after {
+            content: "to take your balloon";
+            width: 10vw;
+          }
+        }
+      }
+    }
   }
 }
