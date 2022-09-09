@@ -154,3 +154,64 @@ header {
     }
   }
 }
+
+.mail-contact {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: 85%;
+  padding: $xl;
+  margin: $sm auto;
+  border-radius: $sm;
+  background: $color;
+  user-select: none;
+  .content {
+    margin: 0 auto;
+    .heading {
+      color: #fff;
+      line-height: $xl;
+      h2, h3 {
+        font-size: $fxl;
+      }
+    }
+    form {
+      display: flex;
+      flex-flow: column;
+      .text-input {
+        margin: $md 0;
+        input {
+          padding: $md;
+          margin: $xs 0;
+          border-radius: $xs;
+          border: none;
+          transition: .2s ease-in-out;
+          &:focus {
+            outline: solid $xs $fth-color;
+          }
+        }
+      }
+      .button {
+        display: flex;
+        input {
+          @include button;
+          margin: 0 $xs;
+        }
+      }
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: $xl;
+  margin-top: 3rem;
+  color: #fff;
+  background: $fth-color;
+}

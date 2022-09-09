@@ -251,4 +251,85 @@ header .text span {
 .call-to-action .content .text a:hover::after {
   content: "Take your balloon";
   width: 10vw;
+}
+
+.mail-contact {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: 85%;
+  padding: 2rem;
+  margin: 0.5rem auto;
+  border-radius: 0.5rem;
+  background: #E87121;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.mail-contact .content {
+  margin: 0 auto;
+}
+.mail-contact .content .heading {
+  color: #fff;
+  line-height: 2rem;
+}
+.mail-contact .content .heading h2, .mail-contact .content .heading h3 {
+  font-size: 1.25rem;
+}
+.mail-contact .content form {
+  display: flex;
+  flex-flow: column;
+}
+.mail-contact .content form .text-input {
+  margin: 0.8rem 0;
+}
+.mail-contact .content form .text-input input {
+  padding: 0.8rem;
+  margin: 0.2rem 0;
+  border-radius: 0.2rem;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+.mail-contact .content form .text-input input:focus {
+  outline: solid 0.2rem #9C450B;
+}
+.mail-contact .content form .button {
+  display: flex;
+}
+.mail-contact .content form .button input {
+  display: flex;
+  justify-content: center;
+  padding: 0.8rem;
+  margin: 2rem 2rem 0 2rem;
+  text-align: center;
+  vertical-align: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #ffffff;
+  background: #9C450B;
+  border: none;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin: 0 0.2rem;
+}
+.mail-contact .content form .button input:hover {
+  background: #068543;
+}
+.mail-contact .content form input {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 3rem;
+  color: #fff;
+  background: #9C450B;
 }/*# sourceMappingURL=index-style.css.map */
