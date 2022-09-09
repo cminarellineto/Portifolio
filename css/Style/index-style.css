@@ -332,4 +332,8 @@ footer {
   margin-top: 3rem;
   color: #fff;
   background: #9C450B;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }/*# sourceMappingURL=index-style.css.map */
